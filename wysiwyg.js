@@ -1,45 +1,49 @@
-var famousPeople = document.getElementByClassName("person")[
+var famousPeople = document.getElementsByClassName("container")[
    {
 	title: "Musician",
 	name: "Elvis Presley",
     bio: "lived sang died",
-    image: "jsldkjfg",
+    image: "",
     lifespan: {
     	birth: "1935",
     	death: "1977"
-    }
+        }
+      },
+   {
+	title: "Musician",
+	name: "Elvis Presley",
+    bio: "lived sang died",
+    image: "",
+    lifespan: {
+    	birth: "1935",
+    	death: "1977"
+        }
     },
    {
 	title: "Musician",
 	name: "Elvis Presley",
     bio: "lived sang died",
-    image: "jsldkjfg",
+    image: "",
     lifespan: {
     	birth: "1935",
     	death: "1977"
+        }
     },
    {
 	title: "Musician",
 	name: "Elvis Presley",
-    bio: "lived sang died"
-    image: "http://images3.mtv.com/uri/mgid:file:docroot:cmt.com:/sitewide/assets/img/artists/presley_elvis/elvispresley02-x600.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85"
+    bio: "lived sang died",
+    image: "",
     lifespan: {
     	birth: "1935",
     	death: "1977"
-    },
-   {
-	title: "Musician",
-	name: "Elvis Presley",
-    bio: "lived sang died"
-    image: "http://images3.mtv.com/uri/mgid:file:docroot:cmt.com:/sitewide/assets/img/artists/presley_elvis/elvispresley02-x600.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85"
-    lifespan: {
-    	birth: "1935",
-    	death: "1977"
+        }
     }
   ]
-    for(var i = 0; i < famousPeople.length; i++); {
-        output.innerHTML += famousPeople[i].title;
-    }
+
+
+
+
 
 
 
@@ -54,4 +58,3 @@ When you click on one of the person elements, a dotted border should appear arou
 When you click on one of the person elements, the text input should immediately gain focus so that you can start typing.
 When there is a highlighted person element, and you begin typing in the input box, the person's biography should be immediately bound to what you are typing, letter by letter.
 When you press the enter/return key when typing in the input field, then the content of the input field should immediately be blank */
-}
