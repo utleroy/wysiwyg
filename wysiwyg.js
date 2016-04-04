@@ -1,45 +1,53 @@
-var famousPeople = document.getElementsByClassName("container")[
-   {
-	title: "Musician",
-	name: "Elvis Presley",
-    bio: "lived sang died",
-    image: "",
+"use strict";
+
+let famousPeople = [
+  {
+	 title: "Musician", name: "Elvis Presley", bio: "lived sang died", image: "http://ecx.images-amazon.com/images/I/41Yd38-SfuL._SY300_.jpg", 
     lifespan: {
     	birth: "1935",
     	death: "1977"
-        }
-      },
-   {
-	title: "Musician",
-	name: "Elvis Presley",
-    bio: "lived sang died",
-    image: "",
-    lifespan: {
-    	birth: "1935",
-    	death: "1977"
-        }
-    },
-   {
-	title: "Musician",
-	name: "Elvis Presley",
-    bio: "lived sang died",
-    image: "",
+    }
+},
+  {
+	 title: "Musician", name: "Elvis Presley", bio: "lived sang died", image: "",
     lifespan: {
     	birth: "1935",
     	death: "1977"
         }
     },
-   {
-	title: "Musician",
-	name: "Elvis Presley",
-    bio: "lived sang died",
-    image: "",
+  {
+	 title: "Musician", name: "Elvis Presley", bio: "lived sang died", image: "",
+    lifespan: {
+    	birth: "1935",
+    	death: "1977"
+        }
+    },
+  {
+	 title: "Musician", name: "Elvis Presley", bio: "lived sang died", image: "",
     lifespan: {
     	birth: "1935",
     	death: "1977"
         }
     }
   ]
+
+  let container = document.getElementById("container");
+  let input = document.getElementById("input");
+  let card = document.getElementsByClassName("card");
+
+    for(let i = 0; i < famousPeople.length; i++) {
+        let person = famousPeople[i];
+    buildCard(person);
+    }
+
+    function buildCard(person) {
+       container.innerHTML += `<person class="card"><header>${person.title} ${person.name}</header>
+             <section> ${person.bio}<img src="${person.image}"></section>
+               <footer> ${person.lifespan.birth}${person.lifespan.death}</footer></person>`
+           }
+
+
+
 
 
 

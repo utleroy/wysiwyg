@@ -1,13 +1,7 @@
-body {
+.yellow {
 	background-color: lightyellow;
 }
 
-.container {
-	height: 250px;
-	max-width: 200px;
-	border: 2px solid black;
-	border-radius: 5px;
-}
 
 /*Create an array of objects that represents famous people (see structure below).
 Create a text input in your DOM.
